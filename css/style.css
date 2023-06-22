@@ -1,3 +1,5 @@
+/* GENERICS */
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -10,9 +12,20 @@
     margin-right: auto;
 }
 
+body {
+    padding: 100px;
+}
+
+/* Header */
+
 header {
     height: 100px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 header button {
@@ -20,16 +33,46 @@ header button {
     margin: 5px 5px;
 }
 
-
-/* Generics */
-
-.icon-button {
-    background-color: gray;
-    color: white;
+header + * {
+    height: calc("100vh - 100px");
 }
+
+/* MAIN */
+
+.card-container {
+    height: 100px;
+    width: 100px;
+}
+
+
+main img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+/* Utilis */
+
 
 
 .flex {
     display: flex;
+}
+
+.justify-end {
     justify-content: end;
+}
+
+.gap {
+    gap: 20px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+flex
+
+/* UTILIZZO */
+
+.icon-button {
+    background-color: gray;
+    color: white;
 }
