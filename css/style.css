@@ -12,9 +12,6 @@
     margin-right: auto;
 }
 
-body {
-    padding: 100px;
-}
 
 /* Header */
 
@@ -25,7 +22,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-
+    z-index: 10;
 }
 
 header button {
@@ -33,29 +30,51 @@ header button {
     margin: 5px 5px;
 }
 
-header + * {
-    height: calc("100vh - 100px");
-}
 
 /* MAIN */
 
-.card-container {
-    height: 100px;
-    width: 100px;
+main {
+    padding: 100px;
+}
+
+.card {
+    height: 200px;
+    width: 300px;
+    /* padding: 50px; */
+    border: 1px dashed red;
 }
 
 
-main img {
-    object-fit: cover;
-    height: 100%;
+
+
+img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+    
+    background-color: red;
+}
+
 /* Utilis */
 
 
 
 .flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
 }
 
 .justify-end {
@@ -65,14 +84,59 @@ main img {
 .gap {
     gap: 20px;
 }
+
 .flex-wrap {
     flex-wrap: wrap;
 }
-flex
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    bottom: 5px;
+}
 
 /* UTILIZZO */
 
 .icon-button {
     background-color: gray;
     color: white;
+}
+
+
+.ticket {
+    color: white;
+    background-color: lightgray;
+}
+
+.first-end-column {
+    width: 20%;
+    border: 2px dashed black;
+}
+
+.center-column {
+    width: 60%;
+    border: 2px dashed black;
+}
+
+
+
+
+
+/* DEBUG */
+
+.bg-sx {
+    width: 50%;
+    height: 100%;
+    border: 1px dashed green;
+}
+
+.bg-dx {
+    width: 50%;
+    height: 100%;
+    border: 1px dashed blue;
 }
